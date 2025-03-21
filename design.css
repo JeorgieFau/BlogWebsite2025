@@ -6,13 +6,13 @@ body {
     background-color: #f4f4f4;
 }
 header {
-    background: #333;
+    background: #4dc96e;
     color: white;
     padding: 1rem;
     text-align: center;
 }
 nav {
-    background: #444;
+    background: #45ad61;
     padding: 0.5rem;
     text-align: center;
 }
@@ -41,7 +41,7 @@ aside {
     border-radius: 5px;
 }
 footer {
-    background: #333;
+    background: #4dc96e;
     color: white;
     text-align: center;
     padding: 1rem;
