@@ -44,10 +44,64 @@ footer {
     background: #4dc96e;
     color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: 20px;
+    padding: 0.01em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 article {
     padding-bottom: 20px;
     border-bottom: 1px solid #ddd;
 }
+.sidebar { /* there is no top, do not add a top it will go up to the pages */
+    width: 250px;
+    background: #45ad61;
+    color: white;
+    height: calc(200vh - 60px);
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    display: bottom;
+    flex-direction: column;
+  }
+  
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    background: #4dc96e;
+    padding-left: 10px;
+  }
+  
+  .main-content {
+    margin-left: 270px;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 150x;
+    height: 250;
+    gap: 5px;
+  }
+  
+  .dashboard-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .dashboard-item:hover {
+    transform: scale(1.05);
+  }
+ 
