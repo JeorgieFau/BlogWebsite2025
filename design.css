@@ -27,6 +27,8 @@ main {
     flex-wrap: wrap;
     margin: 20px;
 }
+
+
 section {
     flex: 2;
     padding: 20px;
@@ -43,7 +45,7 @@ aside {
 footer {
     background: #4dc96e;
     color: white;
-    text-align: center;
+    text-align: left;
     padding: 0.01em;
     margin-top: 10px;
     margin-bottom: 0px;
@@ -82,14 +84,13 @@ article {
   .main-content {
     margin-left: 270px;
     padding: 20px;
-    width: 100%;
   }
   
   .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 150x;
-    height: 250;
+    width: 100x;
+    height: 100;
     gap: 5px;
   }
   
@@ -101,7 +102,9 @@ article {
     transition: transform 0.3s;
   }
   
+  
   .dashboard-item:hover {
     transform: scale(1.05);
   }
+ 
  
