@@ -106,5 +106,141 @@ article {
   .dashboard-item:hover {
     transform: scale(1.05);
   }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background: #4dc96e;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+nav {
+    flex-direction: column;
+    text-align: center;
+    background: #45ad61;
+    padding: 0.5rem;
+    text-align: center;
+}
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav a {
+        margin: 0 15px;
+    }
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+
+section {
+    flex: 2;
+    padding: 20px;
+    background: white;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+aside {
+    flex: 1;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+}
+footer {
+    background: #4dc96e;
+    color: white;
+    text-align: left;
+    padding: 0.01em;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+article {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.sidebar { /* there is no top, do not add a top it will go up to the pages */
+    width: 250px;
+    background: #45ad61;
+    color: white;
+    height: calc(200vh - 60px);
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    display: bottom;
+    flex-direction: column;
+  }
+  
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+    display: block;
+  }
+  
+  .sidebar a:hover {
+    background: #4dc96e;
+    padding-left: 10px;
+  }
+  
+  .main-content {
+    margin-left: 270px;
+    padding: 20px;
+  }
+  
+
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100x;
+    height: 100;
+    gap: 5px;
+  }
+  
+  .dashboard-item {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  
+  .dashboard-item:hover {
+    transform: scale(1.05);
+  }
+ 
+  html, body {
+    height: 100%;
+    overflow: hidden;  /* Disable scrolling */
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+/* Prevent touch scrolling on mobile */
+body {
+    touch-action: none;  /* Disable touch gestures like swipe */
+}
  
  
