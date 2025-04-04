@@ -2,9 +2,12 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Only one padding declaration */
     background-color: #f4f4f4;
+    border: 10px solid #45ad61; /* Green border with 10px thickness */
 }
+
+
 header {
     position: sticky;
     top: 0; 
@@ -47,6 +50,7 @@ section {
     background: white;
     margin: 20px;
     border-radius: 5px;
+    
 }
 aside {
     flex: 1;
@@ -147,4 +151,3 @@ article {
         a:active {
             color: green;
         }
- 
